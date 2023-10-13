@@ -23,6 +23,7 @@ sudo yum update && sudo yum install python3 python-pip xterm
 
 ## launch
 ```bash
+pip install flet
 python3 app.py
 ```
 
