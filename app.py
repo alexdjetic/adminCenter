@@ -48,8 +48,6 @@ def show(page: ft.page):
         page.add(disk)
 
 
-
-
 def main(page: ft.Page):
     page.title = "my domain"
     page.vertical_alignment = 'center'
