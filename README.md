@@ -27,10 +27,13 @@ pip install flet
 python3 app.py
 ```
 
-## raodmap
+## roadmap
 - march-april 2023: docker IP container
+
 - april-may 2023: stop and init IP adress
+  
 - july-september 2023: run, start, stop, delete docker container
+  
 - september-october 2023: run, start, stop, delete qemukvm virtual machine
 
 - ***this will probably change when i finish make the full app design***
