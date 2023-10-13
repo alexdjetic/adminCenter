@@ -20,6 +20,13 @@ class Info():
         return f"Info: {self.host}"
 
     def _space(self) -> None:
+        """cette fonction ajoute dans les attributs de l'objet mes information de chaque partition du système
+
+        @:param: self, l'objet lui meme
+        
+        @:return: None
+        @:rtype: none
+        """
         df = subprocess.Popen(["df"], stdout=subprocess.PIPE)
         output = df.communicate()[0].decode().split('\n')
 
@@ -89,21 +96,3 @@ class Info():
         self._host = socket.gethostname()
         self._ip = socket.gethostbyname(self._host)
         self.space()
-
-
-# Create an instance of the Info class
-info = Info()
-
-# Call the disks method and print the result
-disks = info.disks()
-print(f"disks: {disks}")
-
-for device, disk_info in disks.items():
-    print(f"PREVIOUS")
-    print(f"device: {disk_info['device']}")
-    print(f"size: {disk_info['size']}")
-    print(f"used: {disk_info['used']}")
-    print(f"available: {disk_info['available']}")
-    print(f"percent: {disk_info['percent']}")
-    print(f"mount: {disk_info['mountpoint']}")
-    print(f"NEXT")
