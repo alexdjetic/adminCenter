@@ -1,5 +1,5 @@
 # adminCenter
-my gui/web using flet to monitoring my IT stuff
+my gui/web using flet to monitoring my disc/lvm module stuff
 
 ## install python
 
