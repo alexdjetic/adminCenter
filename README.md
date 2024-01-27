@@ -26,14 +26,3 @@ sudo yum update && sudo yum install python3 python-pip xterm
 pip install flet
 python3 app.py
 ```
-
-## roadmap
-- march-april 2023: docker IP container
-
-- april-may 2023: stop and init IP adress
-  
-- july-september 2023: run, start, stop, delete docker container
-  
-- september-october 2023: run, start, stop, delete qemukvm virtual machine
-
-- ***this will probably change when i finish make the full app design***
